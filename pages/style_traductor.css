@@ -1,7 +1,7 @@
 /*ESTILO DE FONDO DEL BODY*/
 .body-container{
         
-    background-color: #FFD5FF; 
+    background-image: linear-gradient(to bottom, #FFD5FF, #000000 );
     border: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -62,42 +62,14 @@
     font-weight: bold;
 
 }
-/*-----------------ESTILOS EN EL FOOTER---------------------------*/
 
-
-/*ESTILO DEL FOOTER EN TOTAL */
-.footer-container{
-    color: black;
-    background-color: #DC143C;
-    margin-top: 10px;
-}
-
-/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
-.footer-separacion{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-     /*Distribuye horizontalmente los elementos*/
-    
-}
-
-/* ESTILO DE "REDES" */
-.redes {
-    
-    flex-direction: column;
-}
-  
-  /* ESTILOS DE LAS IMÁGENES DE REDES */
-  .redes1 {
-    margin-bottom: 15px;
-  }
 
   /*--------------------------------ESTILOS EN EL TRADUCTOR.................................*/
   .palabrasdeentrada{
     width: 70%;
     justify-content: center;
     align-self: center;
-    color: black;
+    color: white;
     /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
     margin-left: auto;
     margin-right: auto;
@@ -154,6 +126,35 @@
     margin-left: 30px;
 } 
 
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+
+
+/*ESTILO DEL FOOTER EN TOTAL */
+.footer-container{
+    color: black;
+    background-color: #DC143C;
+    margin-top: 10px;
+}
+
+/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+.footer-separacion{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+     /*Distribuye horizontalmente los elementos*/
+    
+}
+
+/* ESTILO DE "REDES" */
+.redes {
+    
+    flex-direction: column;
+}
+  
+  /* ESTILOS DE LAS IMÁGENES DE REDES */
+  .redes1 {
+    margin-bottom: 15px;
+  }
 /* -----------------------------RESPONSIVE Media query para Celular de REGALOS----------------------------------- */
 @media screen and (max-width: 575px){
     .header-container{

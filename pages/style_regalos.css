@@ -1,7 +1,7 @@
 /*ESTILO DE FONDO DEL BODY*/
 .body-container{
         
-    background-color: #FFD5FF; 
+    background-image: linear-gradient(to bottom, #fec196,#d495d48e );
     border: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -67,7 +67,6 @@
     width: 70%;
     justify-content: center;
     align-self: center;
-
     color: black;
     /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
     margin-left: auto;
@@ -117,10 +116,10 @@
     margin-left: 20px;
     margin-right: 20px;
     color: #fff;
+    font-size: 25px;
 }
 
 /*-----------------ESTILOS EN EL FOOTER---------------------------*/
-
 
 /*ESTILO DEL FOOTER EN TOTAL */
 .footer-container{

@@ -1,7 +1,7 @@
 /*ESTILO DE FONDO DEL BODY*/
 .body-container{
-        
-    background-color: #FFD5FF; 
+
+    background-image: linear-gradient(to bottom, #FFD5FF, rgba(220, 20, 60, 0.726) );
     border: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -117,7 +117,7 @@
     margin-left: auto;
     margin-right: auto;
     color: #fff; 
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -132,6 +132,7 @@
     margin-left: 20px;
     margin-right: 20px;
     color: #fff;
+    font-size: x-large;
 }
 
 /* -----------------------------RESPONSIVE Media query para Celular de COMIDAS----------------------------------- */
