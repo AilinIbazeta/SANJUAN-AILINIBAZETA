@@ -100,12 +100,26 @@
     margin: 20px auto;
     border-color: #DC143C;
     border-width: 10vh;
+    
+}
+
+.producto-minicontainer1{ /*este es el contenedor de los productos que no forman parte del carrusel*/
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5pxs;
+
 }
 
 .producto-minicontainer{ /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
-    display: flex;
+    
     justify-content: center;
     align-items: center;
+    align-content: center;
     padding: 10px;
     margin-left: 5px;
     margin-right: 5pxs;
@@ -121,20 +135,23 @@
     font-weight: bold;
 }
 
+
 .producto-image{
-    height: 300px;
-    width: 450px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
 }
 
 .producto-description{
-    width: 60%;
-    height: 60%;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #fff;
-    font-size: x-large;
+    background-color: #FFD5FF;
+    opacity: 70%;
 }
-
 /* -----------------------------RESPONSIVE Media query para Celular de COMIDAS----------------------------------- */
 @media screen and (max-width: 575px){
     
@@ -166,6 +183,7 @@
     .producto-image{
         height: 150px;
         width: 250px;
+        align-items: center;
 
     }
 

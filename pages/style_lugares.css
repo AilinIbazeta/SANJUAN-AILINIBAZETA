@@ -73,10 +73,23 @@
     border-width: 10vh;
 }
 
-.producto-minicontainer{ /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
-    display: flex;
+.producto-minicontainer1{ /*este es el contenedor de los productos que no forman parte del carrusel - contiene la imagen sola y la descripcion*/
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5pxs;
+
+}
+
+.producto-minicontainer{ /*este contenedor del carrusel con su respectiva descripción*/
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     padding: 10px;
     margin-left: 5px;
     margin-right: 5pxs;
@@ -92,18 +105,22 @@
     font-weight: bold;
 }
 
+
 .producto-image{
-    height: 300px;
-    width: 450px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
 }
 
 .producto-description{
-    width: 60%;
-    height: 60%;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #fff;
-    font-size: 25px;
+    background-color: #FFD5FF;
+    opacity: 70%;
 }
 
 /*-----------------ESTILOS EN EL FOOTER---------------------------*/
