@@ -1,0 +1,118 @@
+/*ESTILOS EN EL HEADER: se coloca el nombre sin el guion bajo*/ 
+@import 'header';
+
+body{
+    /*ESTILO DE FONDO DEL BODY*/
+    /*.body-container*/
+        
+    background-color: #FFD5FF; 
+    border: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*ESTILOS EN PALABRAS DE BIENVENIDA*/
+
+
+.bienvenida1{
+     
+    width: 70%;
+    justify-content: center;
+    align-self: center;
+
+    color: #DC143C;
+    /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center; /*para centrar el texto en el medio*/
+    padding: 10px;
+    font-size: large;
+}
+
+
+
+/*--------------ESTILOS EN EL GRID------------------*/
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.imagenesgrid{
+    height: 300px;
+    width: 300px;
+}
+
+/*ESTILOS DE PRODUCTOS*/
+
+
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+
+
+/*ESTILO DEL FOOTER EN TOTAL */
+.footer-container{
+    color: black;
+    background-color: #DC143C;
+    margin-top: 10px;
+}
+
+/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+.footer-separacion{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+     /*Distribuye horizontalmente los elementos*/
+    
+}
+
+/* ESTILO DE "REDES" */
+.redes {
+    
+    flex-direction: column;
+}
+  
+  /* ESTILOS DE LAS IMÁGENES DE REDES */
+  .redes1 {
+    margin-bottom: 15px;
+  }
+
+
+/* -----------------------------RESPONSIVE Media query para Celular del INICIO----------------------------------- */
+@media screen and (max-width: 575px){
+    
+    .header-container{
+        background-image: url('../SANJUAN-AILINIBAZETA/img/fondodique2.jpg');
+        height: 35vh;
+        background-size: contain;
+    }
+
+    .titulo{
+        margin-top: 5px;
+        font-size: large;
+    }
+    
+    /*ESTILOS DEL NAVEGADOR EN GRAL EN MEDIA QUERY*/
+
+        .navegadorunico{    
+            font-size: 8px;
+            font-weight: 400;
+    
+        }
+
+    /*--------------ESTILOS EN EL GRID------------------*/
+    .grid{
+        grid-template-columns: 200px ;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+
+    .imagenesgrid{
+        height: 200px;
+        width: 200px;
+    }
+}
