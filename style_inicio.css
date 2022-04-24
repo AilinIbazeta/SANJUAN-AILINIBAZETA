@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*ESTILOS EN EL HEADER: se coloca el nombre sin el guion bajo*/
+/*COLORES DE BACKGROUND*/
+/*COLORES DE TEXTO EN LISTA*/
 header {
   position: relative;
   /*hace al contenedor la referencia*/
@@ -38,7 +40,7 @@ header nav ul li a:hover {
   justify-content: space-around;
   /*Distribuye horizontalmente los elementos*/
   text-emphasis-color: rgb(247, 239, 239);
-  color: #fff;
+  color: white;
   background-color: #DC143C;
   /*#E83625;*/
   padding: 5px 0;
@@ -62,9 +64,10 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
-body {
+/*COLORES DE BACKGROUND*/
+/*COLORES DE TEXTO EN LISTA*/
+.body-container {
   /*ESTILO DE FONDO DEL BODY*/
-  /*.body-container*/
   background-color: #FFD5FF;
   border: no-repeat;
   background-size: cover;

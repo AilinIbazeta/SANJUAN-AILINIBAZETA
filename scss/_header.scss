@@ -1,3 +1,5 @@
+@import 'variables';
+
 header{
     position: relative; /*hace al contenedor la referencia*/
     background-image: url('../SANJUAN-AILINIBAZETA/img/fondodique.jpg');
@@ -35,8 +37,8 @@ text-align: center;
 font-size: xx-large;
 font-style: italic;
 width: 100%;
-color: black;
-background-color: #FFD5FF;
+color: nth($color-texto,1);
+background-color: $color-fondo;
 opacity: 0.7;    
 }
 
@@ -48,8 +50,8 @@ display: flex;
 width: 100%;
 justify-content: space-around; /*Distribuye horizontalmente los elementos*/
 text-emphasis-color: rgb(247, 239, 239);
-color: #fff;
-background-color: #DC143C; /*#E83625;*/
+color: nth($color-texto,3);
+background-color: $color-crimson; /*#E83625;*/
 padding: 5px 0;
 align-self: center;
 align-items: center; /*Alineacion vertical:*/
@@ -63,7 +65,7 @@ list-style: none; /*Elimino los puntitos de la lista*/
 
 .navegadorunico{
 
-color: white;
+color: nth($color-texto,3);
 text-decoration: none; /*elimina el subrayado*/
 font-size: x-large;
 font-weight: bold;
