@@ -4,9 +4,6 @@
 header{
     position: relative; /*hace al contenedor la referencia*/
     background-image: url('../SANJUAN-AILINIBAZETA/img/fondodique.jpg');
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     height: 61vh;
 
     nav{
@@ -43,9 +40,7 @@ header{
 .navegador{
 position: absolute;
 bottom: 0;
-display: flex;
 width: 100%;
-justify-content: space-around; /*Distribuye horizontalmente los elementos*/
 text-emphasis-color: rgb(247, 239, 239);
 color: nth($color-texto,3);
 background-color: $color-crimson; /*#E83625;*/
@@ -53,7 +48,7 @@ padding: 5px 0;
 align-self: center;
 align-items: center; /*Alineacion vertical:*/
 opacity: 0.9; 
-margin: 0;
+
 }
 
 .navegador li {

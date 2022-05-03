@@ -31,9 +31,6 @@ header {
   position: relative;
   /*hace al contenedor la referencia*/
   background-image: url("../SANJUAN-AILINIBAZETA/img/fondodique.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   height: 61vh;
 }
 header nav ul li a:hover {
@@ -56,10 +53,7 @@ header nav ul li a:hover {
 .navegador {
   position: absolute;
   bottom: 0;
-  display: flex;
   width: 100%;
-  justify-content: space-around;
-  /*Distribuye horizontalmente los elementos*/
   text-emphasis-color: rgb(247, 239, 239);
   color: white;
   background-color: #DC143C;
@@ -69,7 +63,6 @@ header nav ul li a:hover {
   align-items: center;
   /*Alineacion vertical:*/
   opacity: 0.9;
-  margin: 0;
 }
 
 .navegador li {
@@ -131,8 +124,8 @@ header nav ul li a:hover {
 
 /*ESTILOS EN PALABRAS DE BIENVENIDA*/
 .bienvenida1 {
+  /*APLICO EL MIXIN AQUI*/
   width: 70%;
-  justify-content: center;
   align-self: center;
   color: #DC143C;
   /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
@@ -141,7 +134,6 @@ header nav ul li a:hover {
   margin-top: 20px;
   text-align: center;
   /*para centrar el texto en el medio*/
-  padding: 10px;
   font-size: large;
 }
 

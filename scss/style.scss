@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'extends';
 @import 'mapas';
+@import 'mixin';
 
 .body-container{
     /*ESTILO DE FONDO DEL BODY*/
@@ -18,9 +19,10 @@
 
 
 .bienvenida1{
-     
+
+    /*APLICO EL MIXIN AQUI*/
+    
     width: 70%;
-    justify-content: center;
     align-self: center;
     color: nth($color-texto,2);;
     /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
@@ -28,7 +30,6 @@
     margin-right: auto;
     margin-top: 20px;
     text-align: center; /*para centrar el texto en el medio*/
-    padding: 10px;
     font-size: large;
 }
 
