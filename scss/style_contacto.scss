@@ -1,0 +1,130 @@
+/*ESTILO DE FONDO DEL BODY*/
+.body-container{
+        
+    background-color: #FFD5FF; 
+    border: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*-------------ESTILOS DEL HEADER-------------------------*/
+.header-container{
+    position: relative; /*hace al contenedor la referencia*/
+    background-image: url('../img/fondodique.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 61vh;
+}
+
+.titulo{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    padding: 15px 0; /*top 20 right 0 bottom 20 y left 0*/
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    width: 100%;
+    color: black;
+    background-color: #FFD5FF;
+    opacity: 0.7;    
+}
+
+
+/*ESTILOS DEL NAVEGADOR EN GRAL*/
+.navegador{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /*Distribuye horizontalmente los elementos*/
+    text-emphasis-color: rgb(247, 239, 239);
+    color: #fff;
+    background-color: #DC143C; /*#E83625;*/
+    padding: 5px 0;
+    align-self: center;
+    align-items: center; /*Alineacion vertical:*/
+    opacity: 0.9; 
+    margin: 0;
+}
+
+.navegador li {
+    list-style: none; /*Elimino los puntitos de la lista*/
+}
+
+.navegadorunico{
+
+    color: white;
+    text-decoration: none; /*elimina el subrayado*/
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+/*--------------------------------------ESTILO DEL FORMULARIO----------------------------------------*/
+
+  
+.formulario{
+    margin-top: 20px;
+    align-items: center;
+    /* width: 60%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------------------------------ESTILOS EN EL FOOTER------------------------------------------*/
+
+
+/*ESTILO DEL FOOTER EN TOTAL */
+.footer-container{
+    color: black;
+    background-color: #DC143C;
+    margin-top: 10px;
+}
+
+/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+.footer-separacion{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+     /*Distribuye horizontalmente los elementos*/
+    
+}
+
+/* ESTILO DE "REDES" */
+.redes {
+    
+    flex-direction: column;
+}
+  
+  /* ESTILOS DE LAS IMÁGENES DE REDES */
+  .redes1 {
+    margin-bottom: 15px;
+  }
+
+  /* -----------------------------RESPONSIVE Media query para Celular de COMIDAS----------------------------------- */
+@media screen and (max-width: 575px){
+
+      
+    .header-container{
+        background-image: url('../img/fondodique2.jpg');
+        height: 35vh;
+        background-size: contain;
+    }
+
+    .titulo{
+        margin-top: 5px;
+        font-size: large;
+    }
+
+    .navegadorunico{    
+        font-size: 8px;
+        font-weight: 400;
+
+    }
+
+}

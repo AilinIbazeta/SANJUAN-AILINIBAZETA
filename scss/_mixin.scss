@@ -1,5 +1,9 @@
-@mixin bienvenida ($rellenos,$alineamiento){
+@mixin bienvenidamixin ($rellenos,$alineamiento){
     padding: $rellenos;
     justify-content: $alineamiento;
+}
+
+.bienvenida{
+    @include bienvenidamixin (10px, center)
 }
 
