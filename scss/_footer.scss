@@ -1,0 +1,54 @@
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+.footer{
+    /*ESTILO DEL FOOTER EN TOTAL */
+    &-container {
+        color: white;
+        background-color: #DC143C;
+        padding: 20px 0;
+    }
+    /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+    &-separacion{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+         /*Distribuye horizontalmente los elementos*/        
+    }
+    &-title {
+        font-weight: 500;
+    }
+    &-linkedin {
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+
+/* ESTILO DE "REDES" */
+.redes {
+    
+    flex-direction: column;
+}
+  
+  /* ESTILOS DE LAS IMÁGENES DE REDES */
+  .redes1 {
+    margin-bottom: 15px;
+  }
+
+@media screen and (max-width: 575px) {
+    .footer{
+        &-container {
+            padding:0;
+            padding-bottom: 15px;
+        }
+        /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+        &-separacion{
+            flex-direction: column; 
+            justify-content: center;
+            text-align: center;  
+        }
+        &-title {
+            padding-top: 10px;
+        }
+    }
+}

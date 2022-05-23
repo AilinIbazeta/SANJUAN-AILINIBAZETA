@@ -1,10 +1,29 @@
 @charset "UTF-8";
-/*ESTILO DE FONDO DEL BODY*/
-.body-container {
-  background-color: #FFD5FF;
-  border: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+/*COLORES DE BACKGROUND*/
+/*COLORES DE TEXTO EN LISTA*/
+.navegador, .titulo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header, .navegador {
+  display: flex;
+}
+
+/*-----------------HEADER-----------------*/
+.titulo {
+  margin-top: 5px;
+}
+
+.navegador {
+  margin: 0;
+  justify-content: space-around;
+  /*Distribuye horizontalmente los elementos*/
+}
+
+.header {
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /*-------------ESTILOS DEL HEADER-------------------------*/
@@ -66,29 +85,47 @@
   font-weight: bold;
 }
 
-/*--------------------------------------ESTILO DEL FORMULARIO----------------------------------------*/
-.formulario {
-  margin-top: 20px;
-  align-items: center;
-  /* width: 60%; */
-  margin-left: auto;
-  margin-right: auto;
-}
+@media screen and (max-width: 575px) {
+  .header-container {
+    background-image: url("../img/fondodique2.jpg");
+    height: 35vh;
+    background-size: cover;
+  }
 
-/*--------------------------------------ESTILOS EN EL FOOTER------------------------------------------*/
-/*ESTILO DEL FOOTER EN TOTAL */
+  .titulo {
+    margin-top: 5px;
+    font-size: large;
+  }
+
+  /*ESTILOS DEL NAVEGADOR EN GRAL EN MEDIA QUERY*/
+  .navegadorunico {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+.footer {
+  /*ESTILO DEL FOOTER EN TOTAL */
+  /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+}
 .footer-container {
-  color: black;
+  color: white;
   background-color: #DC143C;
-  margin-top: 10px;
+  padding: 20px 0;
 }
-
-/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
 .footer-separacion {
   display: flex;
   justify-content: space-around;
   width: 100%;
   /*Distribuye horizontalmente los elementos*/
+}
+.footer-title {
+  font-weight: 500;
+}
+.footer-linkedin {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
 }
 
 /* ESTILO DE "REDES" */
@@ -101,23 +138,40 @@
   margin-bottom: 15px;
 }
 
-/* -----------------------------RESPONSIVE Media query para Celular de COMIDAS----------------------------------- */
 @media screen and (max-width: 575px) {
-  .header-container {
-    background-image: url("../img/fondodique2.jpg");
-    height: 35vh;
-    background-size: contain;
+  .footer {
+    /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
   }
-
-  .titulo {
-    margin-top: 5px;
-    font-size: large;
+  .footer-container {
+    padding: 0;
+    padding-bottom: 15px;
   }
-
-  .navegadorunico {
-    font-size: 8px;
-    font-weight: 400;
+  .footer-separacion {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-title {
+    padding-top: 10px;
   }
 }
+/*ESTILO DE FONDO DEL BODY*/
+.body-container {
+  background-color: #FFD5FF;
+  border: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*--------------------------------------ESTILO DEL FORMULARIO----------------------------------------*/
+.formulario {
+  margin-top: 20px;
+  align-items: center;
+  /* width: 60%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -----------------------------RESPONSIVE Media query para Celular de COMIDAS----------------------------------- */
 
 /*# sourceMappingURL=style_contacto.css.map */

@@ -1,10 +1,29 @@
 @charset "UTF-8";
-/*ESTILO DE FONDO DEL BODY*/
-.body-container {
-  background-image: linear-gradient(to bottom, #fec196, rgba(212, 149, 212, 0.5568627451));
-  border: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+/*COLORES DE BACKGROUND*/
+/*COLORES DE TEXTO EN LISTA*/
+.navegador, .titulo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header, .navegador {
+  display: flex;
+}
+
+/*-----------------HEADER-----------------*/
+.titulo {
+  margin-top: 5px;
+}
+
+.navegador {
+  margin: 0;
+  justify-content: space-around;
+  /*Distribuye horizontalmente los elementos*/
+}
+
+.header {
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /*-------------ESTILOS DEL HEADER-------------------------*/
@@ -64,6 +83,84 @@
   /*elimina el subrayado*/
   font-size: x-large;
   font-weight: bold;
+}
+
+@media screen and (max-width: 575px) {
+  .header-container {
+    background-image: url("../img/fondodique2.jpg");
+    height: 35vh;
+    background-size: cover;
+  }
+
+  .titulo {
+    margin-top: 5px;
+    font-size: large;
+  }
+
+  /*ESTILOS DEL NAVEGADOR EN GRAL EN MEDIA QUERY*/
+  .navegadorunico {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+.footer {
+  /*ESTILO DEL FOOTER EN TOTAL */
+  /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+}
+.footer-container {
+  color: white;
+  background-color: #DC143C;
+  padding: 20px 0;
+}
+.footer-separacion {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /*Distribuye horizontalmente los elementos*/
+}
+.footer-title {
+  font-weight: 500;
+}
+.footer-linkedin {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+/* ESTILO DE "REDES" */
+.redes {
+  flex-direction: column;
+}
+
+/* ESTILOS DE LAS IMÁGENES DE REDES */
+.redes1 {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+  }
+  .footer-container {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .footer-separacion {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-title {
+    padding-top: 10px;
+  }
+}
+/*ESTILO DE FONDO DEL BODY*/
+.body-container {
+  background-image: linear-gradient(to bottom, #fec196, rgba(212, 149, 212, 0.5568627451));
+  border: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .palabrasregalos {
@@ -136,32 +233,6 @@
 .producto-description {
   background-color: #FFD5FF;
   opacity: 70%;
-}
-
-/*-----------------ESTILOS EN EL FOOTER---------------------------*/
-/*ESTILO DEL FOOTER EN TOTAL */
-.footer-container {
-  color: black;
-  background-color: #DC143C;
-  margin-top: 10px;
-}
-
-/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
-.footer-separacion {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  /*Distribuye horizontalmente los elementos*/
-}
-
-/* ESTILO DE "REDES" */
-.redes {
-  flex-direction: column;
-}
-
-/* ESTILOS DE LAS IMÁGENES DE REDES */
-.redes1 {
-  margin-bottom: 15px;
 }
 
 /* -----------------------------RESPONSIVE Media query para Celular de REGALOS----------------------------------- */

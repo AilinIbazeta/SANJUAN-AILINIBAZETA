@@ -27,19 +27,23 @@
   justify-content: flex-start;
 }
 
-header {
+/*-------------ESTILOS DEL HEADER-------------------------*/
+.header-container {
   position: relative;
   /*hace al contenedor la referencia*/
-  background-image: url("../SANJUAN-AILINIBAZETA/img/fondodique.jpg");
+  background-image: url("../img/fondodique.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 61vh;
-}
-header nav ul li a:hover {
-  /*Nesting o anidamiento: nos sirve para las cascadas*/
-  text-decoration: underline;
 }
 
 .titulo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
   padding: 15px 0;
+  /*top 20 right 0 bottom 20 y left 0*/
   text-align: center;
   font-size: xx-large;
   font-style: italic;
@@ -53,9 +57,12 @@ header nav ul li a:hover {
 .navegador {
   position: absolute;
   bottom: 0;
+  display: flex;
   width: 100%;
+  justify-content: space-around;
+  /*Distribuye horizontalmente los elementos*/
   text-emphasis-color: rgb(247, 239, 239);
-  color: white;
+  color: #fff;
   background-color: #DC143C;
   /*#E83625;*/
   padding: 5px 0;
@@ -63,6 +70,7 @@ header nav ul li a:hover {
   align-items: center;
   /*Alineacion vertical:*/
   opacity: 0.9;
+  margin: 0;
 }
 
 .navegador li {
@@ -78,6 +86,24 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 575px) {
+  .header-container {
+    background-image: url("../img/fondodique2.jpg");
+    height: 35vh;
+    background-size: cover;
+  }
+
+  .titulo {
+    margin-top: 5px;
+    font-size: large;
+  }
+
+  /*ESTILOS DEL NAVEGADOR EN GRAL EN MEDIA QUERY*/
+  .navegadorunico {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
 /*COLORES DE BACKGROUND*/
 /*COLORES DE TEXTO EN LISTA*/
 .titulo, .navegador {
@@ -105,15 +131,63 @@ header nav ul li a:hover {
   justify-content: flex-start;
 }
 
-/*nos permiten tener un objeto que tiene distintos valores para una misma seccion*/
-#normal {
-  font-size: large;
+.bienvenida {
+  padding: 10px;
+  justify-content: center;
 }
 
-#adultomayor {
-  font-size: x-large;
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+.footer {
+  /*ESTILO DEL FOOTER EN TOTAL */
+  /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+}
+.footer-container {
+  color: white;
+  background-color: #DC143C;
+  padding: 20px 0;
+}
+.footer-separacion {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /*Distribuye horizontalmente los elementos*/
+}
+.footer-title {
+  font-weight: 500;
+}
+.footer-linkedin {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
 }
 
+/* ESTILO DE "REDES" */
+.redes {
+  flex-direction: column;
+}
+
+/* ESTILOS DE LAS IMÁGENES DE REDES */
+.redes1 {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+  }
+  .footer-container {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .footer-separacion {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-title {
+    padding-top: 10px;
+  }
+}
 .body-container {
   /*ESTILO DE FONDO DEL BODY*/
   background-color: #FFD5FF;
@@ -152,52 +226,8 @@ header nav ul li a:hover {
   width: 300px;
 }
 
-/*ESTILOS DE PRODUCTOS*/
-/*-----------------ESTILOS EN EL FOOTER---------------------------*/
-/*ESTILO DEL FOOTER EN TOTAL */
-.footer-container {
-  color: black;
-  background-color: #DC143C;
-  margin-top: 10px;
-}
-
-/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
-.footer-separacion {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  /*Distribuye horizontalmente los elementos*/
-}
-
-/* ESTILO DE "REDES" */
-.redes {
-  flex-direction: column;
-}
-
-/* ESTILOS DE LAS IMÁGENES DE REDES */
-.redes1 {
-  margin-bottom: 15px;
-}
-
 /* -----------------------------RESPONSIVE Media query para Celular del INICIO----------------------------------- */
 @media screen and (max-width: 575px) {
-  .header-container {
-    background-image: url("../SANJUAN-AILINIBAZETA/img/fondodique2.jpg");
-    height: 35vh;
-    background-size: contain;
-  }
-
-  .titulo {
-    margin-top: 5px;
-    font-size: large;
-  }
-
-  /*ESTILOS DEL NAVEGADOR EN GRAL EN MEDIA QUERY*/
-  .navegadorunico {
-    font-size: 8px;
-    font-weight: 400;
-  }
-
   /*--------------ESTILOS EN EL GRID------------------*/
   .grid {
     grid-template-columns: 200px;

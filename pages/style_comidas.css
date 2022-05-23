@@ -1,11 +1,29 @@
 @charset "UTF-8";
-/*ESTILO DE FONDO DEL BODY*/
-.body-container {
-  background-color: #FFD5FF;
-  /*background-image: linear-gradient(to bottom, #FFD5FF, rgba(220, 20, 60, 0.726) );*/
-  border: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+/*COLORES DE BACKGROUND*/
+/*COLORES DE TEXTO EN LISTA*/
+.navegador, .titulo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header, .navegador {
+  display: flex;
+}
+
+/*-----------------HEADER-----------------*/
+.titulo {
+  margin-top: 5px;
+}
+
+.navegador {
+  margin: 0;
+  justify-content: space-around;
+  /*Distribuye horizontalmente los elementos*/
+}
+
+.header {
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /*-------------ESTILOS DEL HEADER-------------------------*/
@@ -17,6 +35,7 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 61vh;
+  background-size: cover;
 }
 
 .titulo {
@@ -67,20 +86,47 @@
   font-weight: bold;
 }
 
-/*-----------------ESTILOS EN EL FOOTER---------------------------*/
-/*ESTILO DEL FOOTER EN TOTAL */
-.footer-container {
-  color: black;
-  background-color: #DC143C;
-  margin-top: 10px;
-}
+@media screen and (max-width: 575px) {
+  .header-container {
+    background-image: url("../img/fondodique2.jpg");
+    height: 35vh;
+    background-size: cover;
+  }
 
-/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+  .titulo {
+    margin-top: 5px;
+    font-size: large;
+  }
+
+  /*ESTILOS DEL NAVEGADOR EN GRAL EN MEDIA QUERY*/
+  .navegadorunico {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+.footer {
+  /*ESTILO DEL FOOTER EN TOTAL */
+  /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+}
+.footer-container {
+  color: white;
+  background-color: #DC143C;
+  padding: 20px 0;
+}
 .footer-separacion {
   display: flex;
   justify-content: space-around;
   width: 100%;
   /*Distribuye horizontalmente los elementos*/
+}
+.footer-title {
+  font-weight: 500;
+}
+.footer-linkedin {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
 }
 
 /* ESTILO DE "REDES" */
@@ -93,13 +139,55 @@
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 575px) {
+  .footer {
+    /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+  }
+  .footer-container {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .footer-separacion {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-title {
+    padding-top: 10px;
+  }
+}
+/*ESTILO DE FONDO DEL BODY*/
+.body-container {
+  background-color: #FFD5FF;
+  /*background-image: linear-gradient(to bottom, #FFD5FF, rgba(220, 20, 60, 0.726) );*/
+  border: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /*---------------ESTILOS DE LOS PRODUCTOS EN COMIDAS-LUGARES-REGALOS-ETC------------------------*/
+.palabrascomidas {
+  width: 70%;
+  justify-content: center;
+  align-self: center;
+  color: crimson;
+  /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  /*para centrar el texto en el medio*/
+  padding: 10px;
+  font-size: large;
+}
+
 .producto-container {
   background-color: #493657;
   width: 80%;
   margin: 20px auto;
   border-color: #DC143C;
   border-width: 10vh;
+  border-radius: 4px;
 }
 
 .producto-minicontainer1 {
@@ -127,11 +215,13 @@
 .producto-title {
   text-align: center;
   /*No puedo hacer que los títulos se centren en el medio del recuadro, se quedan arriba y ni con un margin-top lo puedo bajar*/
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
   font-size: 25px;
   font-weight: bold;
+  padding: 10px 0;
 }
 
 .producto-image {
@@ -149,6 +239,9 @@
 .producto-description {
   background-color: #FFD5FF;
   opacity: 70%;
+}
+.producto-description-mobile {
+  display: none;
 }
 
 /* -----------------------------RESPONSIVE Media query para Celular de COMIDAS----------------------------------- */
@@ -181,12 +274,15 @@
     align-items: center;
   }
 
-  .producto-description {
+  .producto-description-mobile {
+    display: block;
     width: 90%;
     height: 30%;
     margin: auto auto;
     color: #fff;
-    font-size: small;
+    font-size: medium;
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
 

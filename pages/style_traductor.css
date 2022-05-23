@@ -1,10 +1,29 @@
 @charset "UTF-8";
-/*ESTILO DE FONDO DEL BODY*/
-.body-container {
-  background-image: linear-gradient(to bottom, #FFD5FF, #000000);
-  border: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+/*COLORES DE BACKGROUND*/
+/*COLORES DE TEXTO EN LISTA*/
+.navegador, .titulo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header, .navegador {
+  display: flex;
+}
+
+/*-----------------HEADER-----------------*/
+.titulo {
+  margin-top: 5px;
+}
+
+.navegador {
+  margin: 0;
+  justify-content: space-around;
+  /*Distribuye horizontalmente los elementos*/
+}
+
+.header {
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /*-------------ESTILOS DEL HEADER-------------------------*/
@@ -16,6 +35,7 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 61vh;
+  background-size: cover;
 }
 
 .titulo {
@@ -66,7 +86,89 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 575px) {
+  .header-container {
+    background-image: url("../img/fondodique2.jpg");
+    height: 35vh;
+    background-size: cover;
+  }
+
+  .titulo {
+    margin-top: 5px;
+    font-size: large;
+  }
+
+  /*ESTILOS DEL NAVEGADOR EN GRAL EN MEDIA QUERY*/
+  .navegadorunico {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
+/*-----------------ESTILOS EN EL FOOTER---------------------------*/
+.footer {
+  /*ESTILO DEL FOOTER EN TOTAL */
+  /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+}
+.footer-container {
+  color: white;
+  background-color: #DC143C;
+  padding: 20px 0;
+}
+.footer-separacion {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /*Distribuye horizontalmente los elementos*/
+}
+.footer-title {
+  font-weight: 500;
+}
+.footer-linkedin {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+/* ESTILO DE "REDES" */
+.redes {
+  flex-direction: column;
+}
+
+/* ESTILOS DE LAS IMÁGENES DE REDES */
+.redes1 {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    /*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
+  }
+  .footer-container {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .footer-separacion {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-title {
+    padding-top: 10px;
+  }
+}
+/*ESTILO DE FONDO DEL BODY*/
+.body-container {
+  background-image: linear-gradient(to bottom, #FFD5FF, #000000);
+  border: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /*--------------------------------ESTILOS EN EL TRADUCTOR.................................*/
+.traductor {
+  margin-bottom: 20px;
+}
+
 .palabrasdeentrada {
   width: 70%;
   justify-content: center;
@@ -85,8 +187,8 @@
 .grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 130px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 150px;
   grid-column-gap: 20px;
   grid-row-gap: 10px;
   background-color: #fff;
@@ -95,65 +197,42 @@
   padding: 25px;
 }
 
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .idiomasanjuanino {
   justify-content: center;
   align-self: center;
   color: black;
-  /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
   text-align: center;
   /*para centrar el texto en el medio*/
   padding: 15px;
   font-size: xx-large;
   font-weight: bold;
   background-color: #ED9B40;
+  border-radius: 4px;
 }
 
 .idiomanormal {
   justify-content: center;
   align-self: center;
   color: white;
-  /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
   text-align: center;
   /*para centrar el texto en el medio*/
   padding: 15px;
   font-size: xx-large;
   font-weight: bold;
   background-color: #4D243D;
+  border-radius: 4px;
 }
 
 .imagenesgrid {
-  /*DEBO ALINEAR LA IMAGEN AL MEDIO*/
   margin-left: 30px;
-}
-
-/*-----------------ESTILOS EN EL FOOTER---------------------------*/
-/*ESTILO DEL FOOTER EN TOTAL */
-.footer-container {
-  color: black;
-  background-color: #DC143C;
-  margin-top: 10px;
-}
-
-/*ESTILO DEL DIV QUE SEPARA LAS REDES DE LOS LINK IMPORTANTES*/
-.footer-separacion {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  /*Distribuye horizontalmente los elementos*/
-}
-
-/* ESTILO DE "REDES" */
-.redes {
-  flex-direction: column;
-}
-
-/* ESTILOS DE LAS IMÁGENES DE REDES */
-.redes1 {
-  margin-bottom: 15px;
 }
 
 /* -----------------------------RESPONSIVE Media query para Celular de REGALOS----------------------------------- */
@@ -177,23 +256,11 @@
   .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 100px 70px 100px;
+    grid-template-columns: 40% 20% 40%;
     grid-template-rows: 50px;
     background-color: #fff;
     grid-column-gap: 5px;
     grid-row-gap: 0px;
-  }
-
-  .idiomanormal {
-    width: 50%;
-    font-size: x-small;
-    width: 60%;
-  }
-
-  .idiomasanjuanino {
-    width: 50%;
-    font-size: x-small;
-    width: 60%;
   }
 
   .item {
@@ -201,11 +268,19 @@
     width: 95%;
   }
 
+  .idiomanormal {
+    font-size: x-small;
+  }
+
+  .idiomasanjuanino {
+    font-size: x-small;
+  }
+
   .imagenesgrid {
     /*DEBO ALINEAR LAS FLECHAS AL MEDIO*/
     margin: auto auto;
-    width: 70px;
-    height: 20px;
+    width: 90%;
+    height: 50%;
   }
 }
 
