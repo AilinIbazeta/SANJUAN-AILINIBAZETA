@@ -10,9 +10,6 @@
     <!--BOOTSTRAP-->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-     
-
 </head>
 
 <body class="body-container">
@@ -22,7 +19,7 @@
         <nav >
             <ul class="navegador">
                 <li><a class="navegadorunico" href="../index.html">INICIO</a></li>
-                <li><a class="navegadorunico" href="comidas.html">COMIDAS</a></A></li>
+                <li class="navegadorunico">COMIDAS</li>
                 <li><a class="navegadorunico" href="lugares.html">LUGARES</a></li>
                 <li><a class="navegadorunico" href="regalos.html">REGALOS</a></li>
                 <li><a class="navegadorunico" href="traductor.html">TRADUCTOR SANJUANINO</a></li>
@@ -33,8 +30,8 @@
 
     </header>
 
-    <p class="palabrascomidas">COMIDAS QUE NO TE PODÉS PERDER EN SAN JUAN</p>
-
+    <p class="palabrascomidas">NO PODÉS PERDERTE DE PROBAR ESTAS DELICIAS:</p>
+    
     <div class="producto-container">
         <p class="producto-title">PUNTA DE ESPALDA A LA LLAMA</p>
         <div class="producto-minicontainer">
@@ -121,7 +118,8 @@
                 </button>
               </div>
         </div>
-        
+        <p class="producto-description-mobile">Es una variedad de masas dulces horneadas muy parecido a la masa de las pastafrolas, 
+          ideales para acompañar el mate. Pueden tener sabor a naranja o limón</p>
     </div>
         
     <div class="producto-container">
@@ -162,18 +160,22 @@
                       </div>
                   </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousellomito" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousellomito" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousellomito" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousellomito" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-      </div>
+        </div>
+        <p class="producto-description-mobile">Un un tipo de sándwitch caliente que consiste en un filete de 
+          lomo de ternera, queso, jamón, huevo frito, tomate, lechuga y aderezos varios como mostaza, 
+          o mayonesa entre dos panes de lomo y de forma rectangular. Se vende en casi todos los restauranes
+          de San Juan pudiendo encontrar lomotecas muy buenas y reconocidas en la provincia.
+        </p>
+    </div>
 
     <div class="producto-container">
       <p class="producto-title">PACHATA</p>
@@ -204,64 +206,64 @@
                     </div>
                 </div>
 
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselpachata" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselpachata" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselpachata" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselpachata" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-        
-        </div>
+        <p class="producto-description-mobile">Es muy parecido al lomito excepto que se usa pan baguette</p>
     </div>
             
     <div class="producto-container">
       <p class="producto-title">SEMITAS</p>
       <div class="producto-minicontainer">
-          <div id="carouselsemitas" class="carousel carousel-dark slide" data-bs-ride="carouselsemitas">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselsemitas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselsemitas" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselsemitas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselsemitas" class="carousel carousel-dark slide" data-bs-ride="carouselsemitas">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselsemitas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselsemitas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselsemitas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="90000">
+              <img src="../img/semitas.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="producto-description">Son masas saladas con chicharrones ideales para acompañar con el mate.
+                    Se venden en todas las panaderías sanjuaninas.</p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="90000">
-                  <img src="../img/semitas.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="producto-description">Son masas saladas con chicharrones ideales para acompañar con el mate.
-                       Se venden en todas las panaderías sanjuaninas.</p>
-                  </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="90000">
+              <img src="../img/semitas2.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <p class="producto-description">Son masas saladas con chicharrones ideales para acompañar con el mate. 
+                    Se venden en todas las panaderías sanjuaninas.</p>
                 </div>
-                <div class="carousel-item" data-bs-interval="90000">
-                  <img src="../img/semitas2.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="producto-description">Son masas saladas con chicharrones ideales para acompañar con el mate. 
-                        Se venden en todas las panaderías sanjuaninas.</p>
-                    </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="90000">
+              <img src="../img/semitas3.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <p class="producto-description">Son masas saladas con chicharrones ideales para acompañar con el mate. 
+                    Se venden en todas las panaderías sanjuaninas.</p>
                 </div>
-                <div class="carousel-item" data-bs-interval="90000">
-                  <img src="../img/semitas3.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="producto-description">Son masas saladas con chicharrones ideales para acompañar con el mate. 
-                        Se venden en todas las panaderías sanjuaninas.</p>
-                    </div>
-                </div>
-
+            </div>
+          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselsemitas" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselsemitas" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselsemitas" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselsemitas" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-        
-        </div>
+      <p class="producto-description-mobile">Son masas saladas con chicharrones ideales para acompañar con el mate. 
+        Se venden en todas las panaderías sanjuaninas.</p>
     </div>
   
 
@@ -308,130 +310,129 @@
     <div class="producto-container">
       <p class="producto-title">SOPAIPILLAS</p>
       <div class="producto-minicontainer">
-          <div id="carouselsopaipillas" class="carousel carousel-dark slide" data-bs-ride="carouselsopaipillas">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselsopaipillas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselsopaipillas" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselsopaipillas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselsopaipillas" class="carousel carousel-dark slide" data-bs-ride="carouselsopaipillas">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselsopaipillas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselsopaipillas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselsopaipillas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="90000">
+              <img src="../img/sopaipillas.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="producto-description">Son masas fritas con azucar. También llamadas tortas fritas.</p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="90000">
-                  <img src="../img/sopaipillas.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="producto-description">Son masas fritas con azucar. También llamadas tortas fritas.</p>
-                  </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="90000">
+              <img src="../img/sopaipilla2.png" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <p class="producto-description">Son masas fritas con azucar. También llamadas tortas fritas.</p>
                 </div>
-                <div class="carousel-item" data-bs-interval="90000">
-                  <img src="../img/sopaipilla2.png" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="producto-description">Son masas fritas con azucar. También llamadas tortas fritas.</p>
-                    </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="90000">
+              <img src="../img/sopaipilla3.png" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <p class="producto-description">Son masas fritas con azucar. También llamadas tortas fritas.</p>
                 </div>
-                <div class="carousel-item" data-bs-interval="90000">
-                  <img src="../img/sopaipilla3.png" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="producto-description">Son masas fritas con azucar. También llamadas tortas fritas.</p>
-                    </div>
-                </div>
-
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselsopaipillas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselsopaipillas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselsopaipillas" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselsopaipillas" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-        
-        </div>
+      <p class="producto-description-mobile">Son masas fritas con azucar. También llamadas tortas fritas.</p>
     </div>
-
-
 
     <div class="producto-container">
       <p class="producto-title">ALCAYOTA CON NUEZ</p>
       <div class="producto-minicontainer">
-          <div id="carouselalcayotaconnuez" class="carousel carousel-dark slide" data-bs-ride="carouselalcayotaconnuez">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselalcayotaconnuez" class="carousel carousel-dark slide" data-bs-ride="carouselalcayotaconnuez">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="90000">
+              <img src="../img/alcayotaconnuez.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="producto-description">Es un postre típico que consiste en acompañar dulce de alcayota o cayote con nuez picada.
+                </p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="90000">
-                  <img src="../img/alcayotaconnuez.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="producto-description">Es un postre típico que consiste en acompañar dulce de alcayota o cayote con nuez picada.
-                    </p>
-                  </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="90000">
+              <img src="../img/alcayotaconnuez2.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <p class="producto-description">Es un postre típico que consiste en acompañar dulce de alcayota o cayote con nuez picada.
+                  </p>
                 </div>
-                <div class="carousel-item" data-bs-interval="90000">
-                  <img src="../img/alcayotaconnuez2.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="producto-description">Es un postre típico que consiste en acompañar dulce de alcayota o cayote con nuez picada.
-                      </p>
-                    </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="90000">
+              <img src="../img/alcayotaconnuez3.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <p class="producto-description">Es un postre típico que consiste en acompañar dulce de alcayota o cayote con nuez picada.
+                  </p>
                 </div>
-                <div class="carousel-item" data-bs-interval="90000">
-                  <img src="../img/alcayotaconnuez3.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="producto-description">Es un postre típico que consiste en acompañar dulce de alcayota o cayote con nuez picada.
-                      </p>
-                    </div>
-                </div>
-
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselalcayotaconnuez" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-        
-        </div>
+      <p class="producto-description-mobile">Es un postre típico que consiste en acompañar dulce de alcayota o cayote con nuez picada.
+      </p>
     </div>
 
     <div class="producto-container">
       <p class="producto-title">DULCE DE MEMBRILLO Y QUESO</p>
       <div class="producto-minicontainer">
-          <div id="carouseldulcemembrillo" class="carousel carousel-dark slide" data-bs-ride="carouseldulcemembrillo">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouseldulcemembrillo" class="carousel carousel-dark slide" data-bs-ride="carouseldulcemembrillo">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="90000">
+              <img src="../img/membrilloyqueso.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="producto-description">Un postre delicioso y muy típico. 
+                  En San Juan es más común acompañar el queso con dulce de membrillo que con dulce de batata.</p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="90000">
-                  <img src="../img/membrilloyqueso.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="producto-description">Un postre delicioso y muy típico. 
-                      En San Juan es más común acompañar el queso con dulce de membrillo que con dulce de batata.</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="90000">
-                  <img src="../img/membrilloyqueso1.jpg" class="d-block w-75 producto-image" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="producto-description">Un postre delicioso y muy típico. 
-                        En San Juan es más común acompañar el queso con dulce de membrillo que con dulce de batata.</p>
-                  </div>
-                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="90000">
+              <img src="../img/membrilloyqueso1.jpg" class="d-block w-75 producto-image" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <p class="producto-description">Un postre delicioso y muy típico. 
+                    En San Juan es más común acompañar el queso con dulce de membrillo que con dulce de batata.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouseldulcemembrillo" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-        
-        </div>
+      <p class="producto-description-mobile">Un postre delicioso y muy típico. 
+      En San Juan es más común acompañar el queso con dulce de membrillo que con dulce de batata.
+      </p>
     </div>
 
     <footer class="footer-container">

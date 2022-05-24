@@ -35,6 +35,7 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 61vh;
+  background-size: cover;
 }
 
 .titulo {

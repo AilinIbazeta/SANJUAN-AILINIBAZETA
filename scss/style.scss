@@ -20,16 +20,17 @@
 
 .bienvenida1{
 
-    /*APLICO EL MIXIN AQUI*/
-    
     width: 70%;
+    justify-content: center;
     align-self: center;
-    color: nth($color-texto,2);;
+    color: crimson;
     /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin: 20px auto;
     text-align: center; /*para centrar el texto en el medio*/
+    font-weight: bold;
+    padding: 10px;
     font-size: large;
 }
 

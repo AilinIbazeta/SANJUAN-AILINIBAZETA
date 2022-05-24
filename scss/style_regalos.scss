@@ -4,7 +4,7 @@
 /*ESTILO DE FONDO DEL BODY*/
 .body-container{
         
-    background-image: linear-gradient(to bottom, #fec196,#d495d48e );
+    background-image: linear-gradient(to bottom, #fec196,#4b134b );
     border: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -27,10 +27,12 @@
 /*---------------ESTILOS DE LOS PRODUCTOS EN COMIDAS-LUGARES-REGALOS-ETC------------------------*/
 
 .producto-container{
-    background-color: #DC143C;
+    background-color: crimson;
     width: 80%;
     margin: 20px auto;
+    border-color: #DC143C;
     border-width: 10vh;
+    border-radius: 4px;
 }
 
 .producto-minicontainer1{ /*este es el contenedor de los productos que no forman parte del carrusel*/
@@ -45,7 +47,7 @@
 
 }
 
-.producto-minicontainer{ /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
+.producto-minicontainer { /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
     
     justify-content: center;
     align-items: center;
@@ -56,17 +58,18 @@
     
 }
 
-.producto-title{
+.producto-title {
     text-align: center; /*No puedo hacer que los títulos se centren en el medio del recuadro, se quedan arriba y ni con un margin-top lo puedo bajar*/
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     color: #fff; 
     font-size: 25px;
     font-weight: bold;
+    padding: 10px 0;
 }
 
-
-.producto-image{
+.producto-image {
     height: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -81,48 +84,39 @@
 .producto-description{
     background-color: #FFD5FF;
     opacity: 70%;
+    &-mobile {
+        display: none;
+    }
 }
 
 /* -----------------------------RESPONSIVE Media query para Celular de REGALOS----------------------------------- */
 @media screen and (max-width: 575px){
-    
-    .header-container{
-        background-image: url('../img/fondodique2.jpg');
-        height: 35vh;
-        background-size: contain;
-    }
-
-    .titulo{
-        margin-top: 5px;
-        font-size: large;
-    }
-
-    .navegadorunico{    
-        font-size: 8px;
-        font-weight: 400;
-
-    }
 
     .producto-minicontainer{ /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
         display: block;
-        padding: 5%;
-        text-align: center; /*ESTO ME DEJA LAS IMÁGENES EN EL CENTRO*/
+        padding: 5%;  
                       
     }
 
     .producto-image{
-        height: 250px;
+        height: 150px;
         width: 250px;
-        margin: auto auto;
+        align-items: center;
+
     }
 
-    .producto-description{
-        width: 90%;
-        height: 30%;
-        text-align: center;
-        margin: auto auto;
-        font-size: small;
+    .producto-description {
         
-    }
+        &-mobile {
+            display: block;
+            width: 90%;
+            height: 30%;
+            margin: auto auto;
+            color: #fff;
+            font-size: medium;
+            text-align: center;
+            padding-bottom: 10px;
+        }
 
+    }
 }

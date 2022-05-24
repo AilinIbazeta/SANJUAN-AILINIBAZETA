@@ -17,14 +17,15 @@
         <nav >
             <ul class="navegador">
                 <li><a class="navegadorunico" href="../index.html">INICIO</a></li>
-                <li><a class="navegadorunico" href="comidas.html">COMIDAS</a></A></li>
-                <li><a class="navegadorunico" href="lugares.html">LUGARES</a></li>
+                <li><a class="navegadorunico" href="comidas.html">COMIDAS</a></li>
+                <li class="navegadorunico">LUGARES</li>
                 <li><a class="navegadorunico" href="regalos.html">REGALOS</a></li>
                 <li><a class="navegadorunico" href="traductor.html">TRADUCTOR SANJUANINO</a></li>
                 <li><a class="navegadorunico" href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
+
     <p class="palabraslugares">LUGARES CLAVE QUE TENÉS QUE CONOCER</p>
     <div class="producto-container">
         <p class="producto-title">DIQUES</p>
@@ -69,33 +70,262 @@
                 </button>
             </div>            
         </div>
+        <p class="producto-description-mobile">San Juan posee grandes diques (represas o envalses) 
+            que son muy visitados por los turistas, en especial 
+            por su bello paisaje montañoso de fondo. 
+            Los diques más conocidos son el "Dique Punta Negra",
+            "Dique de Ullum" y "Dique Cuesta del viento</p>
     </div>
 
     <div class="producto-container">
         <p class="producto-title">BODEGAS Y VIÑEDOS</p>
-        <div class="producto-minicontainer1">
-            <img class="producto-image" src="../img/bodegas1.jpg" >
-            <p class="producto-description">San Juan es una provincia vitivinícola por excelencia, por ende posee 
-                gran variedad de bodegas en casi todos los departamentos. Lo ideal es 
-                informarse en la secretaría de turismo para conocer la RUTA DEL VINO lo mejor posible. 
-                No podés irte de San Juan sin visitar al menos una bodega.
-            </p>
+        <div class="producto-minicontainer">
+            <div id="carouselbodegas" class="carousel carousel-dark slide" data-bs-ride="carouselbodegas">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselbodegas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselbodegas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselbodegas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselbodegas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="90000">
+                    <img src="../img/bodegas1.jpg" class="d-block w-75 producto-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="producto-description">San Juan es una provincia vitivinícola por excelencia, por ende posee 
+                            gran variedad de bodegas en casi todos los departamentos. Lo ideal es 
+                            informarse en la secretaría de turismo para conocer la RUTA DEL VINO lo mejor posible. 
+                            No podés irte de San Juan sin visitar al menos una bodega.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/bodegas2.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">San Juan es una provincia vitivinícola por excelencia, por ende posee 
+                                gran variedad de bodegas en casi todos los departamentos. Lo ideal es 
+                                informarse en la secretaría de turismo para conocer la RUTA DEL VINO lo mejor posible. 
+                                No podés irte de San Juan sin visitar al menos una bodega.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/bodegas3.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">San Juan es una provincia vitivinícola por excelencia, por ende posee 
+                                gran variedad de bodegas en casi todos los departamentos. Lo ideal es 
+                                informarse en la secretaría de turismo para conocer la RUTA DEL VINO lo mejor posible. 
+                                No podés irte de San Juan sin visitar al menos una bodega.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/bodegas4.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">San Juan es una provincia vitivinícola por excelencia, por ende posee 
+                                gran variedad de bodegas en casi todos los departamentos. Lo ideal es 
+                                informarse en la secretaría de turismo para conocer la RUTA DEL VINO lo mejor posible. 
+                                No podés irte de San Juan sin visitar al menos una bodega.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselbodegas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselbodegas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
         </div>
+        <p class="producto-description-mobile">San Juan es una provincia vitivinícola por excelencia, por ende posee 
+            gran variedad de bodegas en casi todos los departamentos. Lo ideal es 
+            informarse en la secretaría de turismo para conocer la RUTA DEL VINO lo mejor posible. 
+            No podés irte de San Juan sin visitar al menos una bodega.</p>
     </div>
 
     <div class="producto-container">
         <p class="producto-title">BARREAL</p>
-        <div class="producto-minicontainer1">
-            <img class="producto-image" src="../img/barreal.jpg" >
-            <p class="producto-description">Barreal es una localidad perteneciente 
-                al departamento Calingasta, ubicada en el extremo sur oeste de la provincia de San Juan.
-                Allí se encuentra el Parque Nacional El Leoncito cuyas condiciones
-                incluyen más de 300 noches despejadas por año, son ideales para la observación de los cielos.
-                También se encuentra la Pampa del Leoncito que consiste en una 
-                planicie seca perfectamente lisa de alrededor de 10 km de largo por 3 de ancho
-            </p>
+        <div class="producto-minicontainer">
+            <div id="carouselbarreal" class="carousel carousel-dark slide" data-bs-ride="carouselbarreal">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselbarreal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselbarreal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselbarreal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselbarreal" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="90000">
+                    <img src="../img/barreal.jpg" class="d-block w-75 producto-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="producto-description">Barreal es una localidad perteneciente 
+                            al departamento Calingasta, ubicada en el extremo sur oeste de la provincia de San Juan.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/barreal2.webp" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">Parque Nacional El Leoncito: Posee condiciones que
+                                incluyen más de 300 noches despejadas por año, ideales para la observación de los cielos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/barreal3.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">También posee la "Pampa del Leoncito": Una 
+                                planicie seca perfectamente lisa de alrededor de 10 km de largo por 3 de ancho donde se practica carrovelismo</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/barreal4.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">A su vez se alberga hermosos paisajes que cambian a lo largo de todo el año.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselbarreal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselbarreal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
         </div>
+        <p class="producto-description-mobile">Barreal es una localidad perteneciente 
+            al departamento Calingasta, ubicada en el extremo sur oeste de la provincia de San Juan.
+            Posee grandes atractivos como el Observatorio Astronómico El Leoncito y la Pampa del Leoncito.</p>
     </div>
+
+    <div class="producto-container">
+        <p class="producto-title">VALLE DE LA LUNA</p>
+        <div class="producto-minicontainer">
+            <div id="carouselvalledelaluna" class="carousel carousel-dark slide" data-bs-ride="carouselvalledelaluna">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselvalledelaluna" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselvalledelaluna" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselvalledelaluna" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="90000">
+                    <img src="../img/valledelaluna.jpg" class="d-block w-75 producto-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="producto-description">El Parque Provincial de Ischigualasto, también llamado Valle de la Luna, conocido por sus paisajes desérticos similares a la superficie lunar con formaciones rocosas increíbles.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/valledelaluna2.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">Cancha de Bochas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/valledelaluna3.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">En el museo del Parque Nacional Ischigualasto, se exhiben fósiles de dinosaurios del período Triásico</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselvalledelaluna" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselvalledelaluna" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
+        </div>
+        <p class="producto-description-mobile">El Parque Provincial de Ischigualasto, también llamado Valle de la Luna, conocido por sus paisajes 
+            desérticos similares a la superficie lunar con formaciones rocosas increíbles.</p>
+    </div>
+
+    <div class="producto-container">
+        <p class="producto-title">CASA NATAL DE SARMIENTO</p>
+        <div class="producto-minicontainer">
+            <div id="carouselcasasarmiento" class="carousel carousel-dark slide" data-bs-ride="carouselcasasarmiento">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselcasasarmiento" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselcasasarmiento" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselcasasarmiento" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="90000">
+                    <img src="../img/casasarmiento.jpg" class="d-block w-75 producto-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="producto-description">Es la casa del prócer argentino Domingo Faustino Sarmiento quien fue gobernador de la provincia de San Juan, presidente de la República Argentina y es conocido como el "Maestro de América" por sus esfuerzos y políticas para implementar la educación pública.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/casasarmiento2.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">Es la casa del prócer argentino Domingo Faustino Sarmiento quien fue gobernador de la provincia de San Juan, presidente de la República Argentina y es conocido como el "Maestro de América" por sus esfuerzos y políticas para implementar la educación pública.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/casasarmiento3.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">Es la casa del prócer argentino Domingo Faustino Sarmiento quien fue gobernador de la provincia de San Juan, presidente de la República Argentina y es conocido como el "Maestro de América" por sus esfuerzos y políticas para implementar la educación pública.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselcasasarmiento" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselcasasarmiento" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
+        </div>
+        <p class="producto-description-mobile">Es la casa del prócer argentino Domingo Faustino Sarmiento quien fue gobernador de la provincia de San Juan, presidente de la República Argentina y es conocido como el "Maestro de América" por sus esfuerzos y políticas para implementar la educación pública</p>
+    </div>
+
+    <div class="producto-container">
+        <p class="producto-title">DIFUNTA CORREA</p>
+        <div class="producto-minicontainer">
+            <div id="carouseldifuntacorrea" class="carousel carousel-dark slide" data-bs-ride="carouseldifuntacorrea">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouseldifuntacorrea" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouseldifuntacorrea" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouseldifuntacorrea" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="90000">
+                    <img src="../img/difuntacorrea1.jpg" class="d-block w-75 producto-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="producto-description">Es un santuario en honor a Deolinda Correa, una mujer que murió hace más de 100 años 
+                            en el lugar amamantando a su hijo y donde se considera que sucedió el primer milagro.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/difuntacorrea2.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">Es visitada por miles de fieles, todos los años se realiza la Cabalgata saliendo desde la capital de San Juan rumbo a la Difunta Correa.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="90000">
+                        <img src="../img/difuntacorrea3.jpg" class="d-block w-75 producto-image" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="producto-description">Ubicado en la localidad de Vallecito, al sureste del departamento Caucete, a 34,4 km en dirección sureste de la ciudad de Caucete.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouseldifuntacorrea" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouseldifuntacorrea" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
+        </div>
+        <p class="producto-description-mobile">Es un santuario en honor a Deolinda Correa, una mujer que murió hace más de 100 años 
+            en el lugar amamantando a su hijo y donde se considera que sucedió el primer milagro.</p>
+    </div>
+
    <footer class="footer-container">
         <div class="footer-separacion">
             <div> 

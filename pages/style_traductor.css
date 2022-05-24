@@ -237,22 +237,6 @@
 
 /* -----------------------------RESPONSIVE Media query para Celular de REGALOS----------------------------------- */
 @media screen and (max-width: 575px) {
-  .header-container {
-    background-image: url("../img/fondodique2.jpg");
-    height: 35vh;
-    background-size: contain;
-  }
-
-  .titulo {
-    margin-top: 5px;
-    font-size: large;
-  }
-
-  .navegadorunico {
-    font-size: 8px;
-    font-weight: 400;
-  }
-
   .grid {
     display: grid;
     justify-content: center;

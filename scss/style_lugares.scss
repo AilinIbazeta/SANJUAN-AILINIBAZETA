@@ -16,13 +16,12 @@
     justify-content: center;
     align-self: center;
     color: white;
-    /*margin: 0 auto; esto es top cero y bottom cero y left auto y rigth auto*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     text-align: center; /*para centrar el texto en el medio*/
     padding: 10px;
-    font-size: large;
+    font-size: larger;
 }
 
 .producto-container{
@@ -31,9 +30,10 @@
     margin: 20px auto;
     border-color: #DC143C;
     border-width: 10vh;
+    border-radius: 4px;
 }
 
-.producto-minicontainer1{ /*este es el contenedor de los productos que no forman parte del carrusel - contiene la imagen sola y la descripcion*/
+.producto-minicontainer1{ /*este es el contenedor de los productos que no forman parte del carrusel*/
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@
 
 }
 
-.producto-minicontainer{ /*este contenedor del carrusel con su respectiva descripción*/
+.producto-minicontainer { /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
     
     justify-content: center;
     align-items: center;
@@ -56,17 +56,18 @@
     
 }
 
-.producto-title{
+.producto-title {
     text-align: center; /*No puedo hacer que los títulos se centren en el medio del recuadro, se quedan arriba y ni con un margin-top lo puedo bajar*/
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     color: #fff; 
     font-size: 25px;
     font-weight: bold;
+    padding: 10px 0;
 }
 
-
-.producto-image{
+.producto-image {
     height: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -81,30 +82,14 @@
 .producto-description{
     background-color: #FFD5FF;
     opacity: 70%;
+    &-mobile {
+        display: none;
+    }
 }
 
 
 /* -----------------------------RESPONSIVE Media query para Celular de COMIDAS----------------------------------- */
 @media screen and (max-width: 575px){
-    
-    .header-container{
-        background-image: url('../img/fondodique2.jpg');
-        height: 35vh;
-        background-size: contain;
-    }
-
-    .titulo{
-        margin-top: 5px;
-        font-size: large;
-    }
-
-    .navegadorunico{    
-        font-size: 8px;
-        font-weight: 400;
-
-    }
-
-    
 
     .producto-minicontainer{ /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
         display: block;
@@ -115,16 +100,22 @@
     .producto-image{
         height: 150px;
         width: 250px;
+        align-items: center;
 
     }
 
-    .producto-description{
-        width: 90%;
-        height: 30%;
-        margin: auto auto;
-        color: #fff;
-        font-size: small;
+    .producto-description {
         
-    }
+        &-mobile {
+            display: block;
+            width: 90%;
+            height: 30%;
+            margin: auto auto;
+            color: #fff;
+            font-size: medium;
+            text-align: center;
+            padding-bottom: 10px;
+        }
 
+    }
 }
