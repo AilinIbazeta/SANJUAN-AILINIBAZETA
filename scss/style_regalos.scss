@@ -4,7 +4,7 @@
 /*ESTILO DE FONDO DEL BODY*/
 .body-container{
         
-    background-image: linear-gradient(to bottom, #fec196,#4b134b );
+    background-image: linear-gradient(to bottom, #FFD5FF, #fec196 );
     border: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -91,6 +91,7 @@
 
 /* -----------------------------RESPONSIVE Media query para Celular de REGALOS----------------------------------- */
 @media screen and (max-width: 575px){
+
 
     .producto-minicontainer{ /*este contenedor solo contiene a la imagen y a la descripcion para poder realizarles flex*/
         display: block;

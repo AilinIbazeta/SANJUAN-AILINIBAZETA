@@ -158,7 +158,7 @@
 }
 /*ESTILO DE FONDO DEL BODY*/
 .body-container {
-  background-image: linear-gradient(to bottom, #fec196, #4b134b);
+  background-image: linear-gradient(to bottom, #FFD5FF, #fec196);
   border: no-repeat;
   background-size: cover;
   background-attachment: fixed;
